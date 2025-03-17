@@ -1,0 +1,116 @@
+
+  
+  /* styles/RaiseIssue.css */
+  .raise-issue-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .raise-issue-container h2 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .raise-issue-container > p {
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .issue-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .issue-form select, .issue-form textarea, .issue-form input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .existing-issues {
+    margin-top: 3rem;
+  }
+  
+  .existing-issues h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .existing-issues > p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .issues-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .issue-card {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .issue-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .issue-card h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .issue-category {
+    display: inline-block;
+    background-color: #e1f0fa;
+    color: #3498db;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .issue-description {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .issue-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .support-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .support-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .support-btn:hover {
+    background-color: #2980b9;
+  }
+  

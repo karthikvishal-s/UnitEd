@@ -1,0 +1,161 @@
+showcase-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .showcase-container h2 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .showcase-container > p {
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .showcase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .showcase-form select, .showcase-form textarea, .showcase-form input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .file-input {
+    padding: 0.75rem 0;
+  }
+  
+  .file-help {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
+  .showcase-entries {
+    margin-top: 3rem;
+  }
+  
+  .showcase-entries h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .showcase-entries > p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .entries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .entry-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .entry-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .entry-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .entry-content {
+    padding: 1.5rem;
+  }
+  
+  .entry-content h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .entry-category {
+    display: inline-block;
+    background-color: #e1f0fa;
+    color: #3498db;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .entry-description {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .entry-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .like-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .like-btn {
+    background-color: #f8f9fa;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  .like-btn:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .logo {
+      margin-bottom: 1rem;
+    }
+    
+    .main-content {
+      padding: 1.5rem;
+    }
+    
+    .dashboard-features, 
+    .features-grid, 
+    .values-grid, 
+    .issues-list, 
+    .entries-grid {
+      grid-template-columns: 1fr;
+    }
+  }
